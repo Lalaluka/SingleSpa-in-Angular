@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SingleSpaInAngular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--Using CDN Version of SystemJs. Local Installation might be preferred but needs to be added to Webpack config-->
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.10.3/dist/system.min.js"></script>
+  <!--Importmap is located in the Assets folder of the Angular Project-->
+  <meta name="importmap-type" content="systemjs-importmap" />
+  <script type="systemjs-importmap" src="/assets/importmap.json"></script>
+  <!--SingleSPA needs SystemJs AMD to work-->
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+    "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+    "@lalaluka/examplemfe2": "http://localhost:4002/js/app.js"
+  }
+}
