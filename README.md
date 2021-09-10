@@ -18,3 +18,20 @@ src/assets/importmap.json
 src/app/app.component.html
 src/app/app.component.ts
 ```
+
+Install by:
+```
+npm ci
+cd examplemfe2
+yarn
+```
+
+Start with:
+````
+npm run start
+````
+and
+````
+cd examplemfe2
+yarn run serve
+````
