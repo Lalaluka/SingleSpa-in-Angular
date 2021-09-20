@@ -35,3 +35,27 @@ and
 cd examplemfe2
 yarn run serve
 ````
+
+## Specifics of Angular Versions
+This list can contain Issues specific Angular Versions have. This of course is based on experience and is not complete.
+
+### Angular9 and SystemJs
+Angular9 seems to have a global Variable System which is not our Browsers SystemJS. This leads to compile Errors:
+```
+ERROR in ./src/app/app.component.ts
+Module not found: Error: Can't resolve '@single-spa/welcome' in '/src/app'
+```
+Not sure what this originates from but here is a way to work around it:
+Rename System in the index.html
+```
+<script>
+  var SystemJS = System
+</script>
+```
+And then use SystemJs instead of system for your calls
+app.components.ts:
+```
+declare var SystemJS: any;
+...
+SystemJs.import("you@your-mfe")
+```
